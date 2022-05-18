@@ -1,0 +1,17 @@
+- name: Prepare VM
+  hosts: fabric_host
+  gather_facts: false
+  tasks:
+    - debug: var=msg  
+
+    # - name: Install Go
+    #   become: true
+    #   apt:
+    #     name: golang-go
+    #     state: present
+
+    # - name: Install Go
+    #   become: true
+    #   apt:
+    #     name: golang-go
+    #     state: present
